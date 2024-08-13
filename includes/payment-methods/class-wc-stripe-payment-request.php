@@ -608,7 +608,7 @@ class WC_Stripe_Payment_Request {
 		// We don't support multiple packages with Payment Request Buttons because we can't offer
 		// a good UX.
 		$packages = WC()->cart->get_shipping_packages();
-		if ( 1 < count( $packages ) ) {
+		if ( 2 < count( $packages ) ) {
 			return false;
 		}
 
